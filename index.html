@@ -1,0 +1,252 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vivriti Asset Management</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/814aed00fd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Place your css files here -->
+
+    <link rel="stylesheet" href="./scss/styles.css">
+
+    <!-- Place your script files here -->
+    <script type='text/javascript' src='https://vivritiamc.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="container__header"> 
+                <!-- LOGO -->
+                <div class="logo"><a href="#" title="Vivriti Asset Management"><img src="./images/vivriti-logo.svg" alt="Vivriti"></a></div>
+                <!-- Navigation -->
+                <nav class="navbar">
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="#">Invest</a>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="#">Funds </a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>    
+                    </li>
+                    <li><a href="#">Performing Credit</a>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Governance</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">About</a></li>
+                    <li><a class="vv-call-us btn btn--primary" href="#">Schedule a call</a></li>
+                    <!-- <li><a href="/">Pricing</a></li>
+                    <li><a href="/">Contact</a></li> -->
+                </div>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section 1 - Intro content  -->
+    <section  class="container section-main">
+        <div class="container__main container__main--section1 mt-40 mb-40"> 
+            <div class="vv-market-section">
+                <h4 class="heading4 heading4__medium mb-20">Gateway to India’s</h4>
+                <h3 class="heading3 heading3__large">Performing Credit Market</h3>
+                <div class="vv-market-scores-wrap">
+                    <div class="vv-market-row">
+                        <div class="score score--1">
+                            <div class="score__count">8</div>
+                            <div class="score__name">Funds Live</div>
+                        </div>
+                        <div class="score score--2">
+                            <div class="score__count">50</div>
+                            <div class="score__name">Distributors</div>
+                        </div>
+                        <div class="score score--3">
+                            <div class="score__count score__count--normal">Addressing India's</div>
+                            <div class="score__name score__name--updated">Financial Gap</div>
+                        </div>
+                    </div>
+                    <div class="vv-market-row">
+                        <div class="score score--4">
+                            <div class="score__count">2500 Cr</div>
+                            <div class="score__name">of Commitment</div>
+                        </div>
+                        <div class="score score--5">
+                            <div class="score__count">200</div>
+                            <div class="score__name">Investors</div>
+                        </div>
+                        <div class="score score--6">
+                            <div class="score__count score__count--small">Fast Growing</div>
+                            <div class="score__name">Debt Fund Manager</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vv-form-section ml-40 mr-40">
+                <h3 class="heading3 heading3__medium heading3--blue">How can we help you?</h3>
+                <form method="post" class="vv-cf-form" >
+                    <fieldset class="full-width full-width--select">
+                        <label for="vv-cf-looking-into"><p>I am looking to...</p></label>
+                        <select id="vv-cf-select" class="vv-cf-select">
+                            <option value="invest">Invest</option>
+                            <option value="raisedebt">Raise Debt</option>
+                            </select>
+                    </fieldset>
+                    <fieldset class="full-width">
+                        <input type="text" name="vv-cf--name" id="name_1" class="vv-cf-fname" placeholder="Name*">
+                    </fieldset>
+                    <fieldset class="two-col">
+                        <input type="tel" name="vv-cf-phone" id="phone_1" class="vv-cf-phone" placeholder="Phone Number*">
+                        <input type="email" name="vv-cf-email" id="email_1" class="vv-cf-email" placeholder="Email*">
+                    </fieldset>
+                    <fieldset class="full-width">
+                        <input type="text" name="vv-cf-company" id="company_1" class="vv-cf-company" placeholder="Company & Designation">
+                    </fieldset>
+                    <fieldset class="full-width">
+                        <textarea name="vv-cf-message" id="message_1" cols="40" rows="10" class="vv-cf-message" placeholder="Message" style="height: 50px;"></textarea>
+                    </fieldset>
+                    <fieldset class="full-width">
+                        <button type="button" name="submitinvest" class="btn btn--primary vv-cf-submit" id="contact_submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main section 2 - Youtube Video -->
+    <section  class="section2 section2--video">
+        <div class="container"> 
+            <div class="vv-video-section">
+                <iframe loading="lazy" width="100%" height="590" src="https://www.youtube.com/embed/YBdLHD8e94w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main section 3 - Visit us -->
+    <section  class="section3 section3--visit-us">
+        <div class="container"> 
+            <div class="container__main"> 
+                <div class="vv-address-section">
+                    <h3 class="heading3 heading3__large heading3--white mb-50"> Come visit us! </h3>
+                    <div class="vv-address-section vv-address-section--chennai">
+                        <div class="vv-address-heading mt-20 mb-20"> Head Office </div>
+                        <p class="vv-address">
+                            Prestige Zackria Metropolitan, No.200/1-8, 1st Floor,<br /> Block 1, Anna Salai, Chennai - 600002.
+                        </p>
+                        <div class="vv-contact-tel"><a href="tel:04440074800">+91-44-4007-4800</a></div>
+                    </div>
+
+                    <div class="vv-address-section vv-address-section--mumbai">
+                        <div class="vv-address-heading mt-20 mb-20"> Mumbai Office </div>
+                        <p class="vv-address">
+                            Vibgyor Towers, Unit 501, 5th Floor, Plot No. C-62,<br /> Block G, Bandra Kurla Complex, Mumbai - 400051
+                        </p>
+                        <div class="vv-contact-tel"><a href="tel:04440074800">+91-44-4007-4800</a></div>
+                    </div>
+                </div>
+                <div class="vv-map-section-wrap">
+                    <div class="vv-map-section">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.6307436533843!2d80.25682811463628!3d13.059160216484752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267b28bd42919%3A0xf15fec436f6f7319!2sVivriti%20Asset%20Management%20Private%20Limited!5e0!3m2!1sen!2sus!4v1660916052582!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main section 4 - Grievances-->
+    <section  class="section4 section4--grievances mt-60 mb-60">
+        <div class="container"> 
+            <div class="vv-grievances-section">
+                <div class="vv-grievance-section1 v-grievance-section1--bg">
+                    <h3 class="heading3 heading3__medium">For Grievances</h3>
+                    <a href="mailto:grievanceredressal@vivritiamc.com">grievanceredressal@vivritiamc.com</a>
+                </div>
+                <div class="vv-grievance-section2 v-grievance-section1--bg">
+                    <h3 class="heading3 heading3__medium">for media</h3>
+                    <a href="mailto:news@vivritiamc.com">news@vivritiamc.com</a><br/>
+                    <button class="btn btn--primary btn--download" id="contact_submit">Download Media Kit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="vv-footer-wrap">
+                <div class="vv-footer-logo">
+                    <a href="#" title="Vivriti Asset Management"><img class="logo_dark" src="https://vivritiamc.com/wp-content/uploads/2021/09/logo-header.svg" alt="logo"></a>
+                </div>
+                <div class="vv-footer-menu vv-footer--menu1">
+                    <ul>
+                        <li class="menu-item"><a href="#">Funds</a></li>
+                        <li class="menu-item"><a href="#">India Potential</a></li>
+                        <li class="menu-item"><a href="#">Invest for Impact</a></li>
+                        <li class="menu-item"><a href="#">Guide to Investing in AIF/Debt</a></li>
+                    </ul>
+                </div>
+                <div class="vv-footer-menu vv-footer--menu2">
+                    <ul>
+                        <li class="menu-item"><a href="#">About VAM</a></li>
+                        <li class="menu-item"><a href="#">Team</a></li>
+                        <li class="menu-item"><a href="#">VAM Blog</a></li>
+                        <li class="menu-item"><a href="#">Media Coverage</a></li>
+                        <li class="menu-item"><a href="#">Careers</a></li>
+                        <li class="menu-item"><a href="#">News</a></li>
+                        <li class="menu-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="vv-footer-social-wrap">
+                    <ul class="vv-social-links">
+                        <li class="youtube"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="youtube"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="youtube"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="linkedin"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                    <ul class="vv-privacy-menu">
+                        <li class="menu-item"><a href="#">Disclosures</a></li>
+                        <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="vv-designed-by">
+                        Designed By Cracker & Rush
+                    </p>
+                    <p class="vv-copyright">
+                        @ 2022 Vivriti Asset Management
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

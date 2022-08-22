@@ -1,0 +1,857 @@
+// Conact Us page
+
+// @import './colors';
+
+.container__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include sm {
+        display: block;
+    }
+
+    .vv-market-section {
+        h3 {
+            border-bottom: 10px solid $secondary_color;
+            color: $primary_color;
+            display: inline-block;
+
+            @include sm {
+                border-bottom: 0 none;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 70%;
+                    height: 10px;
+                    line-height: 100px;
+                    border: 5px solid $yellow;
+                    bottom: -15px;
+                    left: 8%;
+                }
+            }
+        }
+
+        h3,
+        h4 {
+            @include sm {
+                padding: 0 5%;
+            }
+        }
+
+        
+    }
+}   
+
+// Section main
+
+.container {
+
+    &.section-main {
+        .container__main {
+            display: flex;
+            justify-content: space-around;
+
+            @include sm {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
+
+// Section 2
+
+.vv-market-scores-wrap {
+	background: #FBF8F6;
+	margin: 40px 0;
+
+    @include sm {
+        display: flex;
+    }
+
+    .vv-market-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include sm {
+            display: block;
+            grid-auto-flow: revert-layer;
+            padding: 0 5%;
+        }
+    
+        .score {
+            padding: 5px 20px 5px 10px;
+            border-left: 5px solid $pink_color;
+            margin: 40px 0 20px 0;
+
+            &__count {
+                color: $primary_color;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+
+                &--normal {
+                    font-weight: normal !important;
+                    font-size: 20px !important;
+                    color: initial !important;
+                }
+            }
+
+            &__name {
+                font-size: 14px;
+                line-height: 22px;
+
+                &--updated {
+                    color: $primary_color;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// Section 1.2 - Form section
+
+.vv-form-section {
+	text-align: center;
+
+    @include sm {
+        margin: 0;
+        padding: 0 5%;
+        text-align: left;
+    }
+
+    .heading3--blue {
+        @include sm {
+            // border-bottom: 10px solid #f29111;
+            // border-width: 50px;
+            font-size: 52px;
+            line-height: 62px;
+            max-width: 270px;
+            margin: 0 auto 90px auto;
+            position: relative;
+            text-align: center;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 90px;
+                height: 10px;
+                line-height: 100px;
+                border: 9px solid $yellow;
+                bottom: -30px;
+                left: 30%;
+            }
+        }
+    }
+ 
+    .vv-cf-form {
+        // text-align: left;
+
+        fieldset {
+            border: 0 none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 30px 0;
+
+            @include sm {
+                display: block;
+                margin: 0;        
+            }            
+
+            .vv-cf-looking-into {
+                color: $black;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .vv-cf-select {
+                appearance: none;
+                background: $light_grey url('/images/menu-vector.svg') no-repeat 170px center;
+                border: 1px solid #A48484;
+                cursor: pointer;
+                margin: 20px auto 0;
+                padding: 10px 17px;
+                width: 200px;
+
+                @include sm {
+                    margin: 10px 20px 50px 0;
+                }
+
+                // &:focus {
+                //     transform: translateY(-50%) rotate(180deg);
+                // }
+
+                option {
+                    cursor: pointer;
+                    padding: 10px 17px;
+                    width: 200px;
+
+                    &:hover {
+                        background: $mobile_bg_menu;
+                        color: $white;
+                    }
+                }
+            }
+
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"],
+            textarea {
+                border: 0 none;
+                border-bottom: 1px solid $black;
+                padding: 10px 0;
+                font-family: inherit;
+                font-size: 16px;
+                line-height: 18px;
+                color: #C4C4C4;
+
+                @include sm {
+                    display: block;
+                    margin: 0 20px 50px 0;
+                    width: 100%;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            input[type="text"].vv-cf-company,
+            input[type="tel"] {
+                margin-right: 20px;
+            }
+
+            &.full-width {
+                grid-template-columns: 1fr;
+
+                &--select {
+                    @include sm {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .vv-cf-submit {
+                background: $white url('/images/arrow-pink.svg') no-repeat 115px center;
+                color: #1900C0;
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: left;
+                padding: 8px 15px;
+                width: 40%;
+
+                @include sm {
+                    margin: 0 20px 50px 0;
+                    width: 50%;
+                }
+
+                &:hover {
+                    background: $primary_color url('/images/arrowsvg.svg') no-repeat 115px center;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// Section 2 - Video
+
+.section2 {
+
+    &--video {
+        
+        background: url('/images/dottedsvg-svg.svg') repeat center center;
+        padding: 100px 0;
+    
+        .container {
+            background: $white;
+            padding: 40px;
+            width: 1320px;
+        }
+    }
+}
+
+// Section 3 - Visit Us
+
+.section3 {
+
+    &--visit-us {
+        background: $mobile_bg_menu;
+    }
+
+    .container__main {
+        padding-top: 100px;
+
+        .vv-address-section {
+            color: $white;
+            margin-bottom: 90px;
+            margin-right: 60px;
+
+            @include sm {
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0 5%;
+            }
+
+            .heading3 {
+
+                @include sm {
+                    text-align: center;
+                }
+            }
+
+            .vv-address-heading {
+                background: $pink_color; 
+                color: $white;               
+                font-size: 19px;
+                line-height: 24px;
+                font-weight: bold;
+                padding: 10px 12px 8px 10px;
+                text-transform: uppercase;
+            }
+
+            .vv-address {
+                color: $white;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            .vv-contact-tel {
+                color: $white;
+                font-size: 22px;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        .vv-map-section {
+            background: url('/images/wave-yellow1.png') no-repeat top right;
+            border-radius: 100%;
+            position: relative;
+            display: table;
+            padding-top: 80px;
+            background-size: cover;
+            max-width: 225px;
+            max-height: 225px;
+
+            @include sm {
+                background: none;
+                display: block;
+                max-width: inherit;
+                max-height: inherit;
+                padding: 10px;
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//  Section 4 - Grievances
+
+.section4 {
+
+    .vv-grievances-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @include sm {
+            display: block;
+            padding: 0 5%;
+        }
+
+        .v-grievance-section1--bg {
+            background: url('/images/Intersect-com.svg') no-repeat;
+            padding-top: 40px;
+
+            &:not(:last-child) {
+                @include sm {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .heading3 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        a {
+            color: $black;
+            font-size: 20px;
+            line-height: 32px;
+            text-align: left;
+            font-weight: 400;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .btn--download {
+            margin-top: 20px;
+        }
+    }
+}
+
+// Footer
+
+footer {
+    background: $light_grey;
+    padding: 100px 0 50px 0;
+
+    @include sm {
+        padding: 50px 0 20px 0;
+        text-align: center;
+    }
+
+    .vv-footer-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @include sm {
+            display: block;
+
+
+            > div {
+                margin-bottom: 40px;
+            }
+        }
+
+        .vv-footer-menu {
+
+            li {
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                a {
+                    color: $mild_black;
+                    font-size: 18px;
+                    line-height: 26px;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 3px;
+                        transition: opacity .3s ease,width .5s ease;
+                        right: 0;
+                        left: 0;
+                        pointer-events: none;
+                        background-color: $mobile_bg_menu;
+                    }
+
+                    &:hover {
+                        color: $mobile_bg_menu;
+
+                        &::after {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Social Menu {
+
+        .vv-social-links {
+            display: inline-block;
+            margin-bottom: 30px;
+            text-align: left;
+
+            li {
+                display: inline;
+                margin-right: 10px;
+
+                a {
+
+                    &::before {
+                        color: #A48484;
+                    }
+
+                    i {
+                        border: 1px solid #333;
+                        border-radius: 100%;
+                        color: #A48484;
+                        display: inline-block;
+                        font-size: 22px;
+                        padding: 10px;
+                        width: 45px;
+                        height: 45px;
+                        text-align: center;
+                        align-items: center;
+                        padding: 10px;
+
+                        &:hover {
+                            background-color: #A48484;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Privacy Policy Menu
+        .vv-privacy-menu {
+            margin-bottom: 30px;
+
+            li {
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    color: #A48484;
+                    font-size: 18px;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 3px;
+                        transition: opacity .3s ease,width .5s ease;
+                        right: 0;
+                        left: 0;
+                        pointer-events: none;
+                        background-color: #A48484;
+                    }
+
+                    &:hover {
+                        color: #333;
+
+                        &::after {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vv-designed-by {
+            text-transform: uppercase;
+        }
+ 
+        .vv-designed-by,
+        .vv-copyright {
+            color: #A48484;
+            font-size: 18px;
+            // font-family: 'Montserrat', serif;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/* Login page styles starts here */
+
+// section 1 - Inquiry Form
+
+.section1 {
+    
+    &--inquiry-form1 {
+
+        .container {
+            background: $mobile_bg_menu;
+            color: $white;
+            padding: 100px 50px;
+            width: 1240px;
+
+            @include sm {
+                padding: 5%;
+            }
+        }
+    }
+
+    .vv-inquiry-form1-wrap {
+        display: flex;
+        justify-content: space-around;
+
+        @include sm {
+            flex-direction: column-reverse;
+        }
+
+        .vv-inquiry-form1-content {
+            margin-right: 20%;
+
+            .vv-yellow-text {
+                color: $yellow;
+            }
+        }
+
+        .vv-inquiry-form {
+            .heading2 {
+                display: none;
+
+                @include sm {
+                    display: block;
+                }
+            }
+        }
+        
+    }
+}
+
+
+// section 2 - Investors
+
+.section2 {
+    &--inverstors {
+        background: url('/images/dottedsvg-svg.svg') repeat center center;
+        padding: 50px 0 120px 0;
+
+        .container {
+            @include sm {
+                padding: 0;
+            }
+        }
+
+        @include sm {
+            padding: 0 5%;
+        }
+
+        .heading2 {
+            text-align: center;
+        }
+
+        .vv-investors-content-section {
+            position: relative;
+    
+            img {
+                width: 500px !important;
+                height: 275px !important; 
+    
+                @include sm {
+                    height: auto !important;
+                    width: 100% !important;
+                }
+            }
+    
+            .vv-investors-info {
+                background: $pink_color;
+                border-radius: 1px;
+                color: $white;
+                font-size: 18px;
+                left: 30%;
+                padding: 20px;
+                position: absolute;
+                top: 40%;
+                width: 70%;
+    
+                @include sm {
+                    bottom: 20px;
+                    left: 0;
+                    position: relative;
+                    width: inherit;
+                }
+            }
+        }
+    }    
+}
+
+// section 3 - Investors Criteria
+
+.section3 {
+
+    color: $white;
+
+    &--criteria {
+        background: $mobile_bg_menu;
+        padding: 50px 0;
+
+        @include sm {
+            padding:  30px 5%;
+        }
+
+        .heading2 {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    
+        .container__main {
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 40px;
+            padding: 0;
+    
+            @include sm {
+                padding:  0 5%;
+            }
+    
+            .vv-criteria {
+                
+                h4 {
+                    font-size: 20px;
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                    position: relative;
+                    text-transform: uppercase;
+    
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 5px;
+                        border: 3px solid $yellow;
+                        top: -10px;
+                        left: 0;
+                        width: 22%;
+                    }
+                }
+    
+                p {
+                    font-size: 18px;
+                }
+    
+                @include sm {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    
+        .vv-inverstor-criteria-notes {
+            @include sm {
+                padding:  0 5%;
+            }
+        }
+    }
+}
+
+
+
+// section 4 - Listing content
+
+.section4 {
+
+    &--login {
+        // margin: 0;
+    
+        &--login {
+            background: url('/images/dottedsvg-svg.svg') repeat center center;
+            padding: 50px 0;
+        }
+    
+        .vv-inverstor-listing-wrap {
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+    
+            @include sm {
+                max-width: 280px;
+            }
+    
+            .heading2 {
+                margin-bottom: 40px;
+                text-align: center;
+            }
+         
+            .heading4 {
+                margin-bottom: 30px;
+            }
+    
+            .vv-investor-listing {
+                margin-bottom: 40px;
+    
+                &.no-margin {
+                    margin: 0;
+                }
+    
+                li {
+                    font-size: 18px;
+    
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+    
+                    i {
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// section 5 - Inquiry Form
+
+.section5 {
+    background: $yellow;
+    padding: 100px 0;
+
+    .vv-inquiry-form-wrap {
+        text-align: center;
+
+        .heading3 {
+            color: $submit_btn_bg;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.vv-inquiry-form {
+    display: inline-block;
+    max-width: 280px;
+    width: 100%;
+
+    fieldset {
+        border:  0 none;
+        margin-bottom: 20px;
+        text-align: center;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {                
+            border-radius: 5px;
+            border: 0 none;
+            font-size: 14px;
+            // min-width: 350px;
+            opacity: 0.7;
+            padding: 17px 15px;
+            width: 100%;
+
+            @include sm {
+                min-width: 250px;
+            }
+        }
+
+        &.aleft {
+            text-align: left;
+        }
+
+        .vv-iq-submit {
+            background: $submit_btn_bg;
+            color: $white;
+            padding: 15px 12px;
+            cursor: pointer;
+            max-width: 150px;
+            width: 100%;
+            font-size: 15px;
+            text-transform: uppercase;
+            border: 0 none;
+            border-radius: 5px;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &.vv-inquiry-form1 {
+        .vv-iq-submit {
+            background: $yellow;
+            color: $mild_black;
+        }
+    }
+}
+
+
+
+/* Login page styles ends here */

@@ -1,0 +1,15 @@
+
+// Tablet Devices - md refers medium devices
+
+@mixin md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+// Mobile Devices - sm refers small devices
+@mixin sm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}

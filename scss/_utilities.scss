@@ -1,0 +1,61 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::after, ::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/montserrat/") format("opentype");
+}
+
+body {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    height: 1200px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+// img {
+//     height: auto;
+//     width: 100%;
+// }
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+// Buttons
+.btn {
+
+    &--primary {
+        border: 2px solid $mobile_bg_menu;
+        padding: 6px 20px;
+    }
+
+    &--download {
+        background: $white url("/images/menu-vector.svg") no-repeat 175px 18px;
+        color: $mobile_bg_menu;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 10px 12px;
+        padding-right: 30px;
+
+        &:hover {
+            background: $mobile_bg_menu  url("/images/menu-vectorpink.svg") no-repeat 175px 18px;
+            color: $white;
+        }
+    }
+
+}

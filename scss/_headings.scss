@@ -1,0 +1,89 @@
+/* UTILITIES */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 {
+    visibility: visible;
+}
+
+.heading2 {
+
+    &__small {
+        line-height: 24px;
+        font-size: 18px;
+    }
+
+    &__medium {
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+    &__large {
+        line-height: 42px;
+        font-size: 36px;
+    }
+
+    &--blue {
+        color: $mobile_bg_menu;
+    }
+
+    &--white {
+        color:  $white;
+    }
+}
+
+.heading3 {
+
+    &__small {
+        line-height: 24px;
+        font-size: 18px;
+    }
+
+    &__medium {
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+    &__large {
+        line-height: 42px;
+        font-size: 36px;
+    }
+
+    &--blue {
+        color: $mobile_bg_menu;
+    }
+
+    &--white {
+        color:  $white;
+    }
+}
+
+.heading4 {
+
+    &__small {
+        line-height: 24px;
+        font-size: 18px;
+    }
+
+    &__medium {
+        line-height: 30px;
+        font-size: 24px;
+    }
+
+    &__large {
+        line-height: 42px;
+        font-size: 36px;
+    }
+
+    &--blue {
+        color: $mobile_bg_menu;
+    }
+
+    &--white {
+        color:  $white;
+    }
+}

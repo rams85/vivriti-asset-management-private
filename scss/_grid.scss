@@ -1,0 +1,19 @@
+/* UTILITIES */
+
+@import './media_queries';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1240px;
+
+    @include sm {
+        width: 100%;
+    }
+}

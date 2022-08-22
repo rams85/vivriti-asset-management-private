@@ -1,0 +1,38 @@
+$max: 100;
+$offset: 5;
+$unit: 'px'; // Feel free to change the unit.
+
+@mixin list-loop($className, $styleName) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} { 
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+
+// padding-left from 0 to 50px;
+@include list-loop('.pl-', 'padding-left');
+
+// padding-right from 0 to 50px;
+@include list-loop('.pr-', 'padding-right');
+
+// padding-top from 0 to 50px;
+@include list-loop('.pt-', 'padding-top');
+
+// padding-bottom from 0 to 50px;
+@include list-loop('.pb-', 'padding-bottom');
+
+
+// margin-left from 0 to 50px;
+@include list-loop('.ml-', 'margin-left');
+
+// margin-right from 0 to 50px;
+@include list-loop('.mr-', 'margin-right');
+
+// margin-top from 0 to 50px;
+@include list-loop('.mt-', 'margin-top');
+
+// margin-bottom from 0 to 50px;
+@include list-loop('.mb-', 'margin-bottom');
